@@ -2,12 +2,6 @@
 author: "Siddhant"
 output: html_document
 ---
-
-```{r set-options, echo=FALSE, cache=FALSE}
-options(width = 120)  # set output width, turn off scientific notation for big numbers
-```
-
-
 ```{r}
 # Liberty Mutual Insurance is a fortune 100 company. 
 # Our task was to predict a transformed count of hazards or pre-existing damages 
@@ -27,7 +21,7 @@ require(randomForest)
 require(gbm)
 require(xgboost)
 require(ROCR)
-df1 = read.csv("C:/Users/ANUBHAB/Desktop/Liberty/train.csv")
+df1 = read.csv("train.csv")
 summary(df1)
 str(df1)
 
